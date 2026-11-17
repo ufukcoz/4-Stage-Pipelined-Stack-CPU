@@ -86,6 +86,7 @@ module tb_stack;
             w_ex_valid  = 1'b0;
             w_ex_op     = `STACK_NONE;
             w_ex_alu    = 16'h0000;
+            #1;     // let the combinational outputs settle with idle inputs
         end
     endtask
 
